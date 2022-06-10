@@ -1,7 +1,69 @@
-<div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
-
-  <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
-</div>
+<h1>Title</h1>
+<mat-grid-list cols="2" style="height: 100%;">
+    <mat-grid-tile>
+        <div class="example-container">
+            <mat-form-field>
+                <mat-select placeholder="Background">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Wings">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Body">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Eyes">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Mouth">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Cheek">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Oufit">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Select">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Hat">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Item">
+                    <mat-option value="option">Option</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div style="width: 500px; height: 500px;background-color: rgb(165, 207, 200);">
+            <div style="position: absolute; width: 500px; height: 500px;"><img id="image1">
+            </div>
+            <div style="position: absolute; width: 500px; height: 500px;"><img id="image2">
+            </div>
+            <div style="position: absolute; width: 500px; height: 500px;"><img id="image3">
+            </div>
+            <div style="position: absolute; width: 500px; height: 500px;"><img id="image4">
+            </div>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
