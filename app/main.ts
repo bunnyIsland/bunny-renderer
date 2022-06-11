@@ -16,8 +16,12 @@ function createWindow(): BrowserWindow {
   win = new BrowserWindow({
     x: 0,
     y: 0,
-    width: size.width,
-    height: size.height,
+    width: 1220,
+    height: 900,
+    minimizable : false,
+    maximizable : false,
+    resizable: false,
+    title: "Bunny Renderer",
     webPreferences: {
       nodeIntegration: true,
       allowRunningInsecureContent: (serve) ? true : false,

@@ -1,68 +1,80 @@
-<h1>Title</h1>
-<mat-grid-list cols="2" style="height: 100%;">
-    <mat-grid-tile>
+<h2 style="width: 100%; margin: auto; text-align: center;padding-top: 10px;">Bunny Renderer V1.0</h2>
+<mat-grid-list cols="12" rowHeight="800" style="height: 100%;">
+    <mat-grid-tile colspan="4">
         <div class="example-container">
             <mat-form-field>
-                <mat-select placeholder="Background">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Background" (selectionChange)="onBackgroundChange($event.value)">
+                    <mat-option *ngFor="let background of _background" [value]="background">{{ background.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
             <mat-form-field>
-                <mat-select placeholder="Wings">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Wings" (selectionChange)="onWingChange($event.value)">
+                    <mat-option *ngFor="let wing of _wings" [value]="wing">{{ wing.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
+
             <mat-form-field>
-                <mat-select placeholder="Body">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Body" (selectionChange)="onBodyChange($event.value)">
+                    <mat-option *ngFor="let body of _body" [value]="body">{{ body.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
+
             <mat-form-field>
-                <mat-select placeholder="Eyes">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Eyes" (selectionChange)="onEyesChange($event.value)">
+                    <mat-option *ngFor="let eye of _eyes" [value]="eye">{{ eye.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
+
             <mat-form-field>
-                <mat-select placeholder="Mouth">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Mouth" (selectionChange)="onMouthChange($event.value)">
+                    <mat-option *ngFor="let mouth of _mouth" [value]="mouth">{{ mouth.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
+
             <mat-form-field>
-                <mat-select placeholder="Cheek">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Cheek" (selectionChange)="onCheekChange($event.value)">
+                    <mat-option *ngFor="let cheek of _cheek" [value]="cheek">{{ cheek.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
+
             <mat-form-field>
-                <mat-select placeholder="Oufit">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Oufit" (selectionChange)="onOufitChange($event.value)">
+                    <mat-option *ngFor="let outfit of _outfit" [value]="outfit">{{ outfit.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
+
             <mat-form-field>
-                <mat-select placeholder="Select">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Hat" (selectionChange)="onHatChange($event.value)">
+                    <mat-option *ngFor="let hat of _hat" [value]="hat">{{ hat.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
+
             <mat-form-field>
-                <mat-select placeholder="Hat">
-                    <mat-option value="option">Option</mat-option>
-                </mat-select>
-            </mat-form-field>
-            <mat-form-field>
-                <mat-select placeholder="Item">
-                    <mat-option value="option">Option</mat-option>
+                <mat-select placeholder="Item" (selectionChange)="onItemChange($event.value)">
+                    <mat-option *ngFor="let item of _item" [value]="item">{{ item.name }}</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>
     </mat-grid-tile>
-    <mat-grid-tile>
-        <div style="width: 500px; height: 500px;background-color: rgb(165, 207, 200);">
-            <div style="position: absolute; width: 500px; height: 500px;"><img id="image1">
+    <mat-grid-tile colspan="8">
+        <div style="width: 750px; height: 750px;">
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-background">
             </div>
-            <div style="position: absolute; width: 500px; height: 500px;"><img id="image2">
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-wings">
             </div>
-            <div style="position: absolute; width: 500px; height: 500px;"><img id="image3">
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-body">
             </div>
-            <div style="position: absolute; width: 500px; height: 500px;"><img id="image4">
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-cheeks">
+            </div>
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-outfit">
+            </div>
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-mouth">
+            </div>
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-eyes">
+            </div>
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-hat">
+            </div>
+            <div style="position: absolute; width: 750px; height: 750px;"><img id="img-item">
             </div>
         </div>
     </mat-grid-tile>
