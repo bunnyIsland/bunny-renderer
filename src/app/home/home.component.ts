@@ -161,6 +161,9 @@ export class HomeComponent implements OnInit {
       }
 
         data = data.replace(/cls/g, asset.id + '-cls');
+        data = data.replace(/linear-gradient/g, asset.id + '-linear-gradient');
+        data = data.replace(/clip-path-/g, asset.id + '-clip-path-');
+        
         // Change how to handle the file content
 
         asset.content = data;
